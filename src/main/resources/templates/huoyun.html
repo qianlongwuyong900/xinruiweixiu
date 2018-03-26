@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+<title>芯睿电脑维修</title>
+
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		  rel="stylesheet" />
+	<link th:href="@{/assets/materialize/css/materialize.css}" type="text/css"
+		  rel="stylesheet" media="screen,projection" />
+	<link th:href="@{/assets/materialize/css/style.css}" type="text/css"
+		  rel="stylesheet" media="screen,projection" />
+
+</head>
+<body>
+
+	<div th:replace="header :: header"></div>
+
+	<div class="row">
+		<div class="col s12 m6 l3">
+			<div class="card" style="height: 300px">
+				<div class="card-content">
+					<span class="card-title">通达货运</span>
+					<h5 class="center-align">途经</h5>
+					<p>文安 - 赵各庄 - 大留镇 - 兴隆宫 - 围河 - 史各庄 - 新镇 - 廊坊</p>
+					<p>唐二里 - 胜芳 - 左各庄 - 安里屯 - 大柳河</p>
+					<p>手机：13932683765</p>
+					<p>车牌号：1468</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col s12 m6 l3">
+			<div class="card" style="height: 300px">
+				<div class="card-content">
+					<span class="card-title">金城货运</span>
+					<h5 class="center-align">上午途经：</h5>
+					<p>王村 - 兴隆宫 - 新镇 - 霸州 - 永清 - 廊坊</p>
+					<h5 class="center-align">下午途经：</h5>
+					<p>廊坊电子城 - 胜芳 - 左各庄 - 德归 - 文安</p>
+					<p>经理：韩金民 车牌号: 冀R907B9</p>
+					<p>手机：15733667211</p>
+				</div>
+			</div>
+		</div>
+		<div class="col s12 m6 l3">
+			<div class="card" style="height: 300px">
+				<div class="card-content">
+					<span class="card-title">平安货运</span>
+					<h5 class="center-align">快运专线</h5>
+					<p>廊坊 - 永清 - 固安 - 牛坨</p>
+					<p>手机：18633600572</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col s12 m6 l3">
+			<div class="card" style="height: 300px">
+				<div class="card-content">
+					<span class="card-title">雷丰货运</span>
+					<h5 class="center-align">廊坊全境</h5>
+					<p>廊坊 - 永清 - 霸州 - 固安 - 胜芳 - 文安 - 大城 - 阜草 - 香河</p>
+					<p>大厂 - 三河 - 燕郊</p>
+					<p>手机：17777800025 15383962177</p>
+					<p> 18931658618 18942667797</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col s12 m6 l3">
+			<div class="card" style="height: 300px">
+				<div class="card-content">
+					<span class="card-title">天一货运</span>
+					<h5>中转：</h5>
+					<p>廊坊全境 - 胜芳 - 永清 - 霸州 - 固安 - 香河 - 三河 - 大厂 - 燕郊</p>
+					<h5>手机：</h5>
+					<p>大城：15333164096</p>
+					<p>廊坊：13473647000 13784809758</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col s12 m6 l3">
+			<div class="card" style="height: 300px">
+				<div class="card-content">
+					<span class="card-title">其他各县城物流</span>
+					<h6>廊坊 - 永清：13171838887</h6>
+					<h6>廊坊 - 霸州：15369677466</h6>
+					<h6>廊坊 - 固安：15030666142</h6>
+					<h6>廊坊 - 胜芳 - 文安：13633167015</h6>
+					<h6>香河 - 三河 - 大厂 - 燕郊：18903261019</h6>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div th:replace="footer :: footer"></div>
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script th:src="@{/assets/materialize/js/materialize.js}"></script>
+	<script th:src="@{/assets/materialize/js/init.js}"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+            $(".huoyun").addClass("active");
+        });
+	</script>
+</body>
+</html>

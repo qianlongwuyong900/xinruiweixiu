@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+<title>芯睿电脑维修</title>
+
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		  rel="stylesheet" />
+	<link th:href="@{/assets/materialize/css/materialize.css}" type="text/css"
+		  rel="stylesheet" media="screen,projection" />
+	<link th:href="@{/assets/materialize/css/style.css}" type="text/css"
+		  rel="stylesheet" media="screen,projection" />
+
+</head>
+<body>
+
+	<div th:replace="header :: header"></div>
+	<div class="container" style="max-width: 500px">
+		<!-- Page Content goes here -->
+		<h3>联系方式：</h3>
+		<div class="row">
+			<div class="col l12 offset-l3">
+				<h5>手机：</h5>
+				<ul>
+					<li>15373258931</li>
+					<li>手机，微信，支付宝同号</li>
+				</ul>
+			</div>
+			<div class="col s12 m12">
+				<div class="card">
+					<div class="card-image">
+						<img th:src="@{/assets/image/weixin.jpg}" />
+					</div>
+					<div class="card-content">
+						<p style="color: #000;">扫上面的二维码加微信好友</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m12">
+				<div class="card">
+					<div class="card-image">
+						<img th:src="@{/assets/image/zhifubao.jpg}" />
+					</div>
+					<div class="card-content">
+						<p style="color: #000;">扫上面的二维码加支付宝好友</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div th:replace="footer :: footer"></div>
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script th:src="@{/assets/materialize/js/materialize.js}"></script>
+	<script th:src="@{/assets/materialize/js/init.js}"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+            $(".lianxi").addClass("active");
+        });
+	</script>
+</body>
+</html>

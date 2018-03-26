@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<title>Spring Security Example</title>
+</head>
+<body>
+
+
+	<footer class="page-footer light-blue lighten-1" th:fragment="footer">
+		<div>
+			<div class="row">
+				<div class="col l8 s12" >
+					<h5 class="white-text">联系方式：</h5>
+						<div class="col s12 m6 l3" style="width: 100%">
+							<div class="col s12 m12 l6">
+								<div class="card">
+									<div class="card-image">
+										<img th:src="@{/assets/image/weixin.jpg}" />
+									</div>
+									<div class="card-content">
+										<p style="color: #000;">扫上面的二维码加微信好友</p>
+									</div>
+								</div>
+							</div>
+							<div class="col s12 m12 l6">
+								<div class="card">
+									<div class="card-image">
+										<img th:src="@{/assets/image/zhifubao.jpg}" />
+									</div>
+									<div class="card-content">
+										<p style="color: #000;">扫上面的二维码加支付宝好友</p>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				<div class="col l4 s12">
+					<h5 class="white-text">手机：</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">15373258931</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">手机，微信，支付宝同号</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2018 Copyright <a class="grey-text text-lighten-4 right"
+					href="#!">芯睿芯片级电脑维修</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
